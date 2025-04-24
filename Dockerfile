@@ -8,4 +8,4 @@ COPY . /home/frappe/frappe-bench/apps/business_theme_v14
 
 USER frappe
 
-RUN bench --site admin.allpos.ar install-app business_theme_v14
+CMD ["bash", "-c", "bench --site admin.allpos.ar install-app business_theme_v14 && tail -f /dev/null"]
